@@ -1,13 +1,7 @@
-#               _         _      _               ____   _____     _      ___
-#   ___   __ _ | |  __ _ | |__  (_) _ __ ___    |___ \ |___ /    / |    / _ \
-#  / __| / _` || | / _` || '_ \ | || '_ ` _ \     __) |  |_ \    | |   | | | |
-#  \__ \| (_| || || (_| || |_) || || | | | | |   / __/  ___) | _ | | _ | |_| |
-#  |___/ \__,_||_| \__,_||_.__/ |_||_| |_| |_|  |_____||____/ (_)|_|(_) \___/
-#  Discrete event simulation in Python
-#
-#  see www.salabim.org for more information, the documentation and license information
-
-__version__ = "23.1.0"
+"""
+Discrete event simulation in Python
+see www.salabim.org for more information, the documentation and license information
+"""
 
 import heapq
 import random
@@ -43,6 +37,8 @@ import datetime
 from pathlib import Path
 
 from typing import Any, Union, Iterable, Tuple, List, Callable, TextIO, Dict, Set, Type, Hashable, Optional
+
+__version__ = "23.1.0"
 
 
 ColorType = Union[str, Iterable[float]]
