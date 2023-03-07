@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "salabim"
+version = "24.0.0"
+description = "Object oriented discrete event simulation and animation in Python."
+authors = ["Ruud van der Ham", "Daniel S. Katz"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pillow = "^9.4.0"
+
+[tool.poetry.group.dev.dependencies]
+Sphinx = "~6.1.3"
+black = "^23.1.0"
+pytest = "^7.2.2"
+coverage = {extras = ["toml"], version = "^7.2.1"}
+pytest-cov = "^4.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+# pyproject.toml
+[tool.coverage.paths]
+source = ["src", "*/site-packages"]
+
+[tool.coverage.run]
+branch = true
+source = ["salabim"]
+
+[tool.coverage.report]
+show_missing = true
